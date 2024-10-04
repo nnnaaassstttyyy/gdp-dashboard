@@ -49,4 +49,4 @@ st.write(f"Количество пассажиров: {results[pclass][sex]}")
 df = pd.DataFrame(results).T
 df = df.rename(columns = {'male':'Мужчины','female':'Женщины'})
 st.header("Полная статистика:")
-st.table(results)
+st.table(df)

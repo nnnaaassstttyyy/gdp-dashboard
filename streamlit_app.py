@@ -37,5 +37,14 @@ def count_by_class_and_sex(filename):
     return class_counts
 file_path = "titanic_train 2.csv"
 results = count_by_class_and_sex(file_path)
+st.sidebar.header("Выберите класс и пол")
 
+pclass = st.sidebar.selectbox("Выберите класс:", [1, 2, 3])
+
+sex = st.sidebar.selectbox("Выберите пол:", ["male", "female"])
+
+st.header(f"Статистика для {pclass} класса, {sex}:")
+st.write(f"Количество пассажиров: {results[pclass][sex]}")
+
+st.header("Полная статистика:")
 st.table(results)

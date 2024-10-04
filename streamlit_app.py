@@ -28,7 +28,7 @@ def count_by_class_and_sex(filename):
                 continue
 
     return class_counts
-file_path = "/content/titanic_train 2.csv"
+file_path = "titanic_train 2.csv"
 results = count_by_class_and_sex(file_path)
 
 st.table(results)

@@ -9,7 +9,7 @@ st.title("Титаник!")
 
 st.header("Титаник до и после:")
 image = Image.open('641aee6d9d7f730aa0810f53d9323b51.jpg')
-st.image(image, caption = '', use_column_width=True)
+st.image(image, caption = 'Фото из архива', use_column_width=True)
 
 def count_by_class_and_sex(filename):
     class_counts = {
